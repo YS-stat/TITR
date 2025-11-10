@@ -99,3 +99,24 @@ We use the wild bootstrap to test whether two treatment-related coefficients are
 
 === replication(): calculate pvalues under different delta
 
+
+
+3. ADNI Real Data
+
+------------------------------------
+
+For the ADNI real data analysis, please download the dataset from the following link:
+[Google Drive – ADNI Data](https://drive.google.com/drive/folders/1HPwFcV81CQaSXvy0Z6HpuKaOk5nub6gM?usp=drive_link)
+
+After downloading, place the data in the following directory:
+
+```
+TITR_code/Real Data/ADNI haimati image
+```
+
+Then, update the data path accordingly in the notebooks
+`left_image_modeling.ipynb` and `right_image_modeling.ipynb`.
+
+------------------------------------
+
+
