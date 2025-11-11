@@ -285,7 +285,7 @@ def generate_data(n,sigma,R = 2):
     random_matrix = np.random.standard_normal(size=(2,R))
     B3, R1 = np.linalg.qr(random_matrix)
     G = np.random.normal(0,1,size=(R,R,R))
-    C3 = normalize(np.vstack((Ustar(),Ustar(),Ustar(),Ustar())))
+    C3 = normalize(np.vstack((Ustar(),Ustar(),Ustar(),Ustar()))) #Typo (will be overwritten, but may influence random behavior).
     C1 = normalize(np.vstack([Ustar() for _ in range(10)]))
     C2 = normalize(np.vstack([Ustar() for _ in range(10)]))
     random_matrix1 = np.random.standard_normal(size=(2,R))
