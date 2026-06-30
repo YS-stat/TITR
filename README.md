@@ -15,6 +15,7 @@ We present implementation for estimation of TITR model. For low-dimensional sett
 -   `low_d.py`: Functions for low-dimensional setting.
 -   `sparse_testing.py`: Functions for sparse scenario. (bootstrap code)
 -   `README.txt`: Description of the two code files above.
+-   `supp_compare.py`: Functions for comparing Q-learning and A-learning.
 
 The results of Simulation 4.1 (Low-dimensional TITR) can be reproduced by running
 
@@ -67,6 +68,11 @@ treatment-related coefficients are equal to zero.
 sample under dimension `(10,10,10)`, rank `(2,2,2)` and sigma level `0.5`.
 -   `replication()`: calculate p-values under different delta. (change argument `delta`)
 
+The result of SUPPLEMENTARY MATERIAL S.3.2 can be reproduced by running
+
+```
+TITR_code/Simu/supp_compare.py
+```
 
 3. ADNI Real Data
 
