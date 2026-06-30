@@ -260,6 +260,13 @@ def tensor_r_lasso(X,c,AX,y,B,C,theta_true,R1,R2,R3,lambda1,lambdaa,seed,tol,MAX
         loss = eeC
         if t>5 and abs(loss-loss_old)<tol:
             break
+        # eeB = norm(H-H_old)/max(1,norm(H_old))
+        # eeC = norm(CH-CH_old)/max(1,norm(CH_old))
+        # ee1 = norm(theta[:(l//2)]-theta_old[:(l//2)])/max(1,norm(theta_old[:(l//2)]))
+        # ee2 = norm(theta[(-l//2):]-theta_old[(-l//2):])/max(1,norm(theta_old[(-l//2):]))
+        # loss = eeC
+        # if loss<tol:
+        #     break 
     #print(t,eeB,eeC,ee1,ee2)
     time_end=time.time()
     time=time_end-time_start
